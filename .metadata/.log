@@ -1,0 +1,114 @@
+!SESSION 2024-09-30 06:17:47.066 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2024-09-30 06:17:59.636
+!MESSAGE Recreating part support. No part support available.
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-09-30 06:18:05.575
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\octopus'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 1 0 2024-09-30 06:18:06.865
+!MESSAGE The device 'LPC55S69' (version='1.0.0') from SDK 'SDK_2.x_LPCXpresso55S69' (version='2.16.000', build='epluginsite808 2024-07-15') will be installed.
+
+!ENTRY com.crt.log 4 -1 2024-09-30 06:21:19.057
+!MESSAGE Cannot invoke "org.eclipse.cdt.core.settings.model.ICProjectDescription.getStorage(String, boolean)" because "projectDescription" is null
+!STACK 0
+java.lang.Exception: java.lang.NullPointerException: Cannot invoke "org.eclipse.cdt.core.settings.model.ICProjectDescription.getStorage(String, boolean)" because "projectDescription" is null
+	at com.crt.utils.general.Reporter.log(Reporter.java:592)
+	at com.nxp.mcuxpresso.core.datamodels.SDKProjectResourceChecker.resourceChanged(SDKProjectResourceChecker.java:68)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:321)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:311)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:174)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:458)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1586)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:50)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.cdt.core.settings.model.ICProjectDescription.getStorage(String, boolean)" because "projectDescription" is null
+	at com.nxp.mcuxpresso.core.datamodels.SDKChipVendorDatabase.validateSDKRequirements(SDKChipVendorDatabase.java:2151)
+	at com.nxp.mcuxpresso.core.datamodels.SDKProjectResourceChecker.resourceChanged(SDKProjectResourceChecker.java:66)
+	... 8 more
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-09-30 06:21:30.155
+!MESSAGE Indexed 'Lab3' (27 sources, 50 headers) in 3.96 sec: 7,740 declarations; 22,077 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.crt.log 1 0 2024-09-30 06:30:12.826
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2024-09-30 06:30:12.854
+!MESSAGE RedlinkServer telnet session connected on port 3025->61333 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2024-09-30 06:30:36.277
+!MESSAGE Starting GDB server [ D:/Installations/NXP/LinkServer_1.6.133/binaries/crt_emu_cm_redlink, --server, :10989, -msg-port=61338, -g, -mi, -2, -pLPC55S69, -vendor=NXP, --bootromstall, 0x50000040, --reset=, -ProbeHandle=1, -CoreIndex=0, -cache=disable, --flash-hashing, --flash-driver=, -x, D:/Classworks/Microprocessor Lab/MPL/Lab3/Debug, --flash-dir, D:/Installations/NXP/LinkServer_1.6.133/binaries/Flash, --flash-dir, D:/Classworks/Microprocessor Lab/MPL/.mcuxpressoide_packages_support/LPC55S69_support/Flash, --telnet, 3330 ]
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2024-09-30 06:30:39.555
+!MESSAGE Telnet session connected on port 3330->61352 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug 4 0 2024-09-30 06:34:51.807
+!MESSAGE There is already a running debug session for the launch configuration 'Lab3 LinkServer Debug'.
+
+!ENTRY com.crt.log 1 0 2024-09-30 06:35:06.516
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2024-09-30 06:35:07.526
+!MESSAGE RedlinkServer telnet session connected on port 3025->61443 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2024-09-30 06:35:14.433
+!MESSAGE Starting GDB server [ D:/Installations/NXP/LinkServer_1.6.133/binaries/crt_emu_cm_redlink, --server, :10989, -msg-port=61444, -g, -mi, -2, -pLPC55S69, -vendor=NXP, --bootromstall, 0x50000040, --reset=, -ProbeHandle=1, -CoreIndex=0, -cache=disable, --flash-hashing, --flash-driver=, -x, D:/Classworks/Microprocessor Lab/MPL/Lab3/Debug, --flash-dir, D:/Installations/NXP/LinkServer_1.6.133/binaries/Flash, --flash-dir, D:/Classworks/Microprocessor Lab/MPL/.mcuxpressoide_packages_support/LPC55S69_support/Flash, --telnet, 3330 ]
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2024-09-30 06:35:17.200
+!MESSAGE Telnet session connected on port 3330->61457 @ 127.0.0.1
+!SESSION 2024-10-01 06:55:58.846 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-10-01 06:56:47.902
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\octopus'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-10-01 07:00:15.066
+!MESSAGE Indexed 'Lab4' (25 sources, 47 headers) in 3.03 sec: 7,022 declarations; 20,023 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.crt.log 1 0 2024-10-01 08:36:27.084
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2024-10-01 08:36:27.162
+!MESSAGE RedlinkServer telnet session connected on port 3025->55308 @ 127.0.0.1
+
+!ENTRY [ERROR] [com.nxp.mcuxpresso.core.debug.support.linkserver] 0 0 2024-10-01 08:37:30.388
+!MESSAGE 0x301, No probes found
+
+!ENTRY com.crt.log 1 0 2024-10-01 08:37:40.218
+!MESSAGE Starting GDB server [ D:/Installations/NXP/LinkServer_1.6.133/binaries/crt_emu_cm_redlink, --server, :10989, -msg-port=55323, -g, -mi, -2, -pLPC55S69, -vendor=NXP, --bootromstall, 0x50000040, --reset=, -ProbeHandle=1, -CoreIndex=0, -cache=disable, --flash-hashing, --flash-driver=, -x, D:/Classworks/Microprocessor Lab/MPL/Lab4/Debug, --flash-dir, D:/Installations/NXP/LinkServer_1.6.133/binaries/Flash, --flash-dir, D:/Classworks/Microprocessor Lab/MPL/.mcuxpressoide_packages_support/LPC55S69_support/Flash, --telnet, 3330 ]
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2024-10-01 08:37:43.791
+!MESSAGE Telnet session connected on port 3330->55338 @ 127.0.0.1
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-10-01 09:39:35.101
+!MESSAGE An internal error occurred during: "UI refresh".
+!STACK 0
+org.eclipse.swt.SWTException: Device is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4918)
+	at org.eclipse.swt.SWT.error(SWT.java:4833)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1278)
+	at org.eclipse.swt.widgets.Display.getThread(Display.java:2590)
+	at com.nxp.swtools.common.ui.utils.progress.UIJobHelper.runNowOrInJob(UIJobHelper.java:215)
+	at com.nxp.swtools.validation.engine.internal.ValidationService$DelayedExecutor.cancelPrevJob(ValidationService.java:251)
+	at com.nxp.swtools.validation.engine.internal.ValidationService$DelayedExecutor.runAction(ValidationService.java:226)
+	at com.nxp.swtools.common.utils.runtime.DelayedExecution$1.run(DelayedExecution.java:379)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
