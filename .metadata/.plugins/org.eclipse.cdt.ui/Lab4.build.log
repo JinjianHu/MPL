@@ -1,4 +1,4 @@
-08:37:22 **** Incremental Build of configuration Debug for project Lab4 ****
+21:46:17 **** Incremental Build of configuration Debug for project Lab4 ****
 make -r -j8 all 
 make[1]: Nothing to be done for 'main-build'.
 Performing post-build steps
@@ -7,5 +7,5 @@ arm-none-eabi-size "Lab4.axf"; # arm-none-eabi-objcopy -v -O binary "Lab4.axf" "
   12012	      8	   8464	  20484	   5004	Lab4.axf
  
 
-08:37:23 Build Finished. 0 errors, 0 warnings. (took 1s.132ms)
+21:46:18 Build Finished. 0 errors, 0 warnings. (took 329ms)
 
