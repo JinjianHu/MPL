@@ -2672,7 +2672,7 @@ END GROUP
                 0x20044000                        __top_SRAM4 = 0x20044000
                 0x20044000                        __top_RAM4 = 0x20044000
 
-.text           0x00000000     0x3794
+.text           0x00000000     0x378c
  FILL mask 0xff
                 0x00000000                        __vectors_start__ = ABSOLUTE (.)
  *(SORT_BY_ALIGNMENT(.isr_vector))
@@ -2682,16 +2682,16 @@ END GROUP
                 0x00000130                        . = ALIGN (0x4)
                 0x00000130                        __section_table_start = .
                 0x00000130                        __data_section_table = .
-                0x00000130        0x4 LONG 0x3794 LOADADDR (.data)
+                0x00000130        0x4 LONG 0x378c LOADADDR (.data)
                 0x00000134        0x4 LONG 0x20000000 ADDR (.data)
                 0x00000138        0x4 LONG 0x8 SIZEOF (.data)
-                0x0000013c        0x4 LONG 0x3794 LOADADDR (.data_RAM2)
+                0x0000013c        0x4 LONG 0x378c LOADADDR (.data_RAM2)
                 0x00000140        0x4 LONG 0x4000000 ADDR (.data_RAM2)
                 0x00000144        0x4 LONG 0x0 SIZEOF (.data_RAM2)
-                0x00000148        0x4 LONG 0x3794 LOADADDR (.data_RAM3)
+                0x00000148        0x4 LONG 0x378c LOADADDR (.data_RAM3)
                 0x0000014c        0x4 LONG 0x40100000 ADDR (.data_RAM3)
                 0x00000150        0x4 LONG 0x0 SIZEOF (.data_RAM3)
-                0x00000154        0x4 LONG 0x3794 LOADADDR (.data_RAM4)
+                0x00000154        0x4 LONG 0x378c LOADADDR (.data_RAM4)
                 0x00000158        0x4 LONG 0x20040000 ADDR (.data_RAM4)
                 0x0000015c        0x4 LONG 0x0 SIZEOF (.data_RAM4)
                 0x00000160                        __data_section_table_end = .
@@ -3248,98 +3248,98 @@ END GROUP
                 0x00003388                __sys_write
  *(SORT_BY_ALIGNMENT(.rodata) SORT_BY_ALIGNMENT(.rodata.*) SORT_BY_ALIGNMENT(.constdata) SORT_BY_ALIGNMENT(.constdata.*))
  .rodata.__assertion_failed.str1.4
-                0x00003394      0x366 ./utilities/fsl_assert.o
+                0x00003394      0x35e ./utilities/fsl_assert.o
                                  0x14 (size before relaxing)
  .rodata.cbPint.str1.4
-                0x000036fa        0x3 ./source/Lab3.o
+                0x000036f2        0x3 ./source/Lab3.o
  .rodata.main.str1.4
-                0x000036fa        0xe ./source/Lab3.o
+                0x000036f2        0x8 ./source/Lab3.o
  .rodata.SDK_DelayAtLeastUs.str1.4
-                0x000036fa       0x2b ./drivers/fsl_common_arm.o
- *fill*         0x000036fa        0x2 ff
+                0x000036f2       0x2b ./drivers/fsl_common_arm.o
+ *fill*         0x000036f2        0x2 ff
  .rodata.s_flexcommBaseAddrs
-                0x000036fc       0x24 ./drivers/fsl_flexcomm.o
+                0x000036f4       0x24 ./drivers/fsl_flexcomm.o
  .rodata.FLEXCOMM_GetInstance.str1.4
-                0x00003720       0x41 ./drivers/fsl_flexcomm.o
+                0x00003718       0x41 ./drivers/fsl_flexcomm.o
  .rodata.FLEXCOMM0_DriverIRQHandler.str1.4
-                0x00003720       0x3c ./drivers/fsl_flexcomm.o
+                0x00003718       0x3c ./drivers/fsl_flexcomm.o
  .rodata.FLEXCOMM1_DriverIRQHandler.str1.4
-                0x00003720       0x3c ./drivers/fsl_flexcomm.o
+                0x00003718       0x3c ./drivers/fsl_flexcomm.o
  .rodata.FLEXCOMM2_DriverIRQHandler.str1.4
-                0x00003720       0x3c ./drivers/fsl_flexcomm.o
+                0x00003718       0x3c ./drivers/fsl_flexcomm.o
  .rodata.FLEXCOMM3_DriverIRQHandler.str1.4
-                0x00003720       0x3c ./drivers/fsl_flexcomm.o
+                0x00003718       0x3c ./drivers/fsl_flexcomm.o
  .rodata.FLEXCOMM4_DriverIRQHandler.str1.4
-                0x00003720       0x3c ./drivers/fsl_flexcomm.o
+                0x00003718       0x3c ./drivers/fsl_flexcomm.o
  .rodata.FLEXCOMM5_DriverIRQHandler.str1.4
-                0x00003720       0x3c ./drivers/fsl_flexcomm.o
+                0x00003718       0x3c ./drivers/fsl_flexcomm.o
  .rodata.FLEXCOMM6_DriverIRQHandler.str1.4
-                0x00003720       0x3c ./drivers/fsl_flexcomm.o
+                0x00003718       0x3c ./drivers/fsl_flexcomm.o
  .rodata.FLEXCOMM7_DriverIRQHandler.str1.4
-                0x00003720       0x3c ./drivers/fsl_flexcomm.o
+                0x00003718       0x3c ./drivers/fsl_flexcomm.o
  .rodata.FLEXCOMM8_DriverIRQHandler.str1.4
-                0x00003720       0x3c ./drivers/fsl_flexcomm.o
+                0x00003718       0x3c ./drivers/fsl_flexcomm.o
  .rodata.s_pintBases
-                0x00003720        0x8 ./drivers/fsl_pint.o
+                0x00003718        0x8 ./drivers/fsl_pint.o
  .rodata.s_pintResets
-                0x00003728        0x8 ./drivers/fsl_pint.o
+                0x00003720        0x8 ./drivers/fsl_pint.o
  .rodata.s_pintIRQ
-                0x00003730        0xa ./drivers/fsl_pint.o
+                0x00003728        0xa ./drivers/fsl_pint.o
  .rodata.PINT_GetInstance.str1.4
-                0x0000373a       0x33 ./drivers/fsl_pint.o
+                0x00003732       0x33 ./drivers/fsl_pint.o
  .rodata.PINT_Init.str1.4
-                0x0000373a       0x1e ./drivers/fsl_pint.o
+                0x00003732       0x1e ./drivers/fsl_pint.o
  .rodata.PINT_PinInterruptConfig.str1.4
-                0x0000373a       0x1e ./drivers/fsl_pint.o
+                0x00003732       0x1e ./drivers/fsl_pint.o
  .rodata.PINT_EnableCallbackByIndex.str1.4
-                0x0000373a       0x1e ./drivers/fsl_pint.o
+                0x00003732       0x1e ./drivers/fsl_pint.o
  .rodata.RESET_ClearPeripheralReset.str1.4
-                0x0000373a       0x1e ./drivers/fsl_reset.o
- *fill*         0x0000373a        0x2 ff
+                0x00003732       0x1e ./drivers/fsl_reset.o
+ *fill*         0x00003732        0x2 ff
  .rodata.__num_Ciob_streams
-                0x0000373c        0x4 D:/Installations/NXP/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libcr_semihost_nf.a(__ciob.o)
-                0x0000373c                __num_Ciob_streams
+                0x00003734        0x4 D:/Installations/NXP/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libcr_semihost_nf.a(__ciob.o)
+                0x00003734                __num_Ciob_streams
  .rodata._Csys_alloc.str1.1
-                0x00003740       0x53 D:/Installations/NXP/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libcr_c.a(alloc.o)
+                0x00003738       0x53 D:/Installations/NXP/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libcr_c.a(alloc.o)
                                  0x18 (size before relaxing)
  .rodata._initio.str1.1
-                0x00003793        0x4 D:/Installations/NXP/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libcr_c.a(initio.o)
+                0x0000378b        0x4 D:/Installations/NXP/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libcr_c.a(initio.o)
  .rodata.__vfprintf.str1.1
-                0x00003793       0x38 D:/Installations/NXP/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libcr_c.a(printf.o)
-                0x000037cc                        . = ALIGN (0x4)
- *fill*         0x00003793        0x1 ff
+                0x0000378b       0x38 D:/Installations/NXP/MCUXpressoIDE_11.10.0_3148/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.10.0.202311280810/tools/bin/../lib/gcc/arm-none-eabi/13.2.1/../../../../arm-none-eabi/lib/thumb/v8-m.main+fp/hard\libcr_c.a(printf.o)
+                0x000037c4                        . = ALIGN (0x4)
+ *fill*         0x0000378b        0x1 ff
 
-.glue_7         0x00003794        0x0
- .glue_7        0x00003794        0x0 linker stubs
+.glue_7         0x0000378c        0x0
+ .glue_7        0x0000378c        0x0 linker stubs
 
-.glue_7t        0x00003794        0x0
- .glue_7t       0x00003794        0x0 linker stubs
+.glue_7t        0x0000378c        0x0
+ .glue_7t       0x0000378c        0x0 linker stubs
 
-.vfp11_veneer   0x00003794        0x0
- .vfp11_veneer  0x00003794        0x0 linker stubs
+.vfp11_veneer   0x0000378c        0x0
+ .vfp11_veneer  0x0000378c        0x0 linker stubs
 
-.v4_bx          0x00003794        0x0
- .v4_bx         0x00003794        0x0 linker stubs
+.v4_bx          0x0000378c        0x0
+ .v4_bx         0x0000378c        0x0 linker stubs
 
-.iplt           0x00003794        0x0
- .iplt          0x00003794        0x0 ./utilities/fsl_assert.o
+.iplt           0x0000378c        0x0
+ .iplt          0x0000378c        0x0 ./utilities/fsl_assert.o
 
-.rel.dyn        0x00003794        0x0
- .rel.iplt      0x00003794        0x0 ./utilities/fsl_assert.o
+.rel.dyn        0x0000378c        0x0
+ .rel.iplt      0x0000378c        0x0 ./utilities/fsl_assert.o
 
 .ARM.extab
  *(SORT_BY_ALIGNMENT(.ARM.extab*) SORT_BY_ALIGNMENT(.gnu.linkonce.armextab.*))
 
-.ARM.exidx      0x00003794        0x0
-                0x00003794                        __exidx_start = .
+.ARM.exidx      0x0000378c        0x0
+                0x0000378c                        __exidx_start = .
  *(SORT_BY_ALIGNMENT(.ARM.exidx*) SORT_BY_ALIGNMENT(.gnu.linkonce.armexidx.*))
-                0x00003794                        __exidx_end = .
-                0x00003794                        _etext = .
+                0x0000378c                        __exidx_end = .
+                0x0000378c                        _etext = .
 
 .m_usb_data
  *(SORT_BY_ALIGNMENT(m_usb_global))
 
-.data_RAM2      0x04000000        0x0 load address 0x00003794
+.data_RAM2      0x04000000        0x0 load address 0x0000378c
  FILL mask 0xff
                 [!provide]                        PROVIDE (__start_data_RAM2 = .)
                 [!provide]                        PROVIDE (__start_data_SRAMX = .)
@@ -3353,7 +3353,7 @@ END GROUP
                 [!provide]                        PROVIDE (__end_data_RAM2 = .)
                 [!provide]                        PROVIDE (__end_data_SRAMX = .)
 
-.data_RAM3      0x40100000        0x0 load address 0x00003794
+.data_RAM3      0x40100000        0x0 load address 0x0000378c
  FILL mask 0xff
                 [!provide]                        PROVIDE (__start_data_RAM3 = .)
                 [!provide]                        PROVIDE (__start_data_USB_RAM = .)
@@ -3367,7 +3367,7 @@ END GROUP
                 [!provide]                        PROVIDE (__end_data_RAM3 = .)
                 [!provide]                        PROVIDE (__end_data_USB_RAM = .)
 
-.data_RAM4      0x20040000        0x0 load address 0x00003794
+.data_RAM4      0x20040000        0x0 load address 0x0000378c
  FILL mask 0xff
                 [!provide]                        PROVIDE (__start_data_RAM4 = .)
                 [!provide]                        PROVIDE (__start_data_SRAM4 = .)
@@ -3388,7 +3388,7 @@ END GROUP
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _end_uninit_RESERVED = .
 
-.data           0x20000000        0x8 load address 0x00003794
+.data           0x20000000        0x8 load address 0x0000378c
  FILL mask 0xff
                 0x20000000                        _data = .
                 [!provide]                        PROVIDE (__start_data_RAM = .)
@@ -3409,7 +3409,7 @@ END GROUP
                 [!provide]                        PROVIDE (__end_data_RAM = .)
                 [!provide]                        PROVIDE (__end_data_SRAM = .)
 
-.igot.plt       0x20000008        0x0 load address 0x0000379c
+.igot.plt       0x20000008        0x0 load address 0x00003794
  .igot.plt      0x20000008        0x0 ./utilities/fsl_assert.o
 
 .bss_RAM2       0x04000000        0x0
@@ -3540,8 +3540,8 @@ END GROUP
                 0x20040000                        _vStackTop = (. + _StackSize)
                 [!provide]                        PROVIDE (__valid_user_code_checksum = (0x0 - ((((((_vStackTop + (ResetISR + 0x1)) + (NMI_Handler + 0x1)) + (HardFault_Handler + 0x1)) + (DEFINED (MemManage_Handler)?MemManage_Handler:0x0 + 0x1)) + (DEFINED (BusFault_Handler)?BusFault_Handler:0x0 + 0x1)) + (DEFINED (UsageFault_Handler)?UsageFault_Handler:0x0 + 0x1))))
                 0x00000000                        _image_start = LOADADDR (.text)
-                0x0000379c                        _image_end = (LOADADDR (.data) + SIZEOF (.data))
-                0x0000379c                        _image_size = (_image_end - _image_start)
+                0x00003794                        _image_end = (LOADADDR (.data) + SIZEOF (.data))
+                0x00003794                        _image_size = (_image_end - _image_start)
 OUTPUT(Lab3.axf elf32-littlearm)
 LOAD linker stubs
 

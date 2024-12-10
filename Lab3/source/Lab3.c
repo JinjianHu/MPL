@@ -32,7 +32,7 @@ int main(void) {
  /* Init FSL debug console. */
  BOARD_InitDebugConsole();
 #endif
- PRINTF("Hello World\r\n");
+ PRINTF("Hello\r\n");
  /* Force the counter to be placed into memory. */
  volatile static int i = 0 ;
  /* Enter an infinite loop, just incrementing a counter. */

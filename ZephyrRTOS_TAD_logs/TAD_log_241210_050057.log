@@ -1,0 +1,18 @@
+"Task Aware Debugger for GDB" version 11.10.0 (202404041456)
+Copyright 2016-2023 NXP
+==================================
+04:59:39.757 INFO: [ZephyrRTOS] .config file could not be read [D:\Classworks\Microprocessor Lab\MPL\Final_project_hello_world_cm33_core0\Debug\.config (The system cannot find the file specified)]
+04:59:39.757 INFO: [TadModel] DSF session ID 15 has started.
+04:59:47.119 INFO: [TadState] TAD state changed: DEBUG_STARTED -> DEBUG_INIT_0 (RESUMED, USER_REQUEST)
+04:59:47.165 INFO: [TadState] TAD state changed: DEBUG_INIT_0 -> DEBUG_INIT_1 (SUSPENDED, SIGNAL)
+04:59:48.544 INFO: [TadState] TAD state changed: DEBUG_INIT_1 -> DEBUG_SUSPENDED (RESUMED, USER_REQUEST)
+04:59:48.647 INFO: [TadState] TAD state changed: DEBUG_SUSPENDED -> DEBUG_SUSPENDED (SUSPENDED, BREAKPOINT)
+04:59:52.125 INFO: [ZephyrRTOS] .config file could not be read [D:\Classworks\Microprocessor Lab\MPL\Final_project_hello_world_cm33_core1\Debug\.config (The system cannot find the file specified)]
+04:59:52.125 INFO: [TadModel] DSF session ID 16 has started.
+04:59:56.121 INFO: [TadState] TAD state changed: DEBUG_STARTED -> DEBUG_INIT_0 (RESUMED, USER_REQUEST)
+04:59:56.128 INFO: [TadState] TAD state changed: DEBUG_INIT_0 -> DEBUG_INIT_1 (SUSPENDED, SIGNAL)
+04:59:56.236 INFO: [TadState] TAD state changed: DEBUG_INIT_1 -> DEBUG_SUSPENDED (RESUMED, USER_REQUEST)
+05:00:03.614 INFO: [TadState] TAD state changed: DEBUG_SUSPENDED -> DEBUG_RESUMED (RESUMED, USER_REQUEST)
+05:00:03.946 INFO: [TadState] TAD state changed: DEBUG_RESUMED -> READY (SUSPENDED, BREAKPOINT)
+05:00:17.802 INFO: [TadState] TAD state changed: READY -> DEBUG_RESUMED (RESUMED, USER_REQUEST)
+05:00:57.848 INFO: [TadModel] DSF session ID 16 has ended.
